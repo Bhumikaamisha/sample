@@ -1,0 +1,9 @@
+Feature:Checking the signup is working as expected
+  @Smoke1
+  Scenario: User is able to signup successfully
+    Given User is in homepage
+    When user clicks on "Signin" link
+    And  clicks on "Create your Amazon account" link
+    And user enters data in the create account form with your name " Sandy" and email " abcdef1@yahoo.co.in" and password "abcdef1"and reenter password "abcdef"
+    And user clicks on "Create your Amazon account" button
+    Then user should be landed on page with text "Hello, Sandy"

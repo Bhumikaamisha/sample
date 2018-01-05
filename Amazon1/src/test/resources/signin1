@@ -1,0 +1,8 @@
+Feature:Checking the Login is working as expected
+  @Smoke2
+  Scenario: User is able to Login successfully
+    Given User is in homepage
+    When user clicks on "Sign in" link
+    And  user enters data in the sign in form with email "kk.madhuri111@gmail.com" and password "dhruvin09"
+    And user clicks on signInSubmit
+    Then user should be landed on page with message "Hello, krish"
